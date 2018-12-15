@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 20f6879a827af554bbb125abf77e6205
+timeCreated: 1524499130
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bomb: {fileID: 1561828571242360, guid: e629f018eaa4dd142af6e792fda337e8, type: 2}
+  - coin: {fileID: 1272722668000446, guid: a9f09606b67e5214eb6e14c02f086863, type: 2}
+  - main_camera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
