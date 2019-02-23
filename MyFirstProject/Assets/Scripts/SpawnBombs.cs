@@ -28,14 +28,16 @@ public class SpawnBombs : MonoBehaviour
     private const int lvl = 4;
     private int CoinVal = 0;
     private int chanceDrop = 7;
+    private const int first_arcade_speed = 3;
+    private int myspeed;
     private string SaveCoinInfo;
 
 
 
     void Awake()
     {
-        bomb.GetComponent<FallDown>().fallspeed = 2;
-        coin.GetComponent<CoinDown>().speed = 2;
+        bomb.GetComponent<FallDown>().fallspeed = 3;
+        coin.GetComponent<CoinDown>().speed = 3;
         chanceDrop = 7;
 
         TimeTablo.SetActive(true);
@@ -44,6 +46,9 @@ public class SpawnBombs : MonoBehaviour
         {
             BigManager = GameObject.Find("SceneManager 1");
             val = BigManager.GetComponent<Manager>().val;
+
+            if (val == 4)
+                myspeed = BigManager.GetComponent<Manager>().speed;
         }
         else
         {
@@ -53,8 +58,8 @@ public class SpawnBombs : MonoBehaviour
 
         if (val == 0) // аркада
         {
-            bomb.GetComponent<FallDown>().fallspeed = 2;
-            coin.GetComponent<CoinDown>().speed = 2;
+            bomb.GetComponent<FallDown>().fallspeed = first_arcade_speed;
+            coin.GetComponent<CoinDown>().speed = first_arcade_speed;
             time = 1.1f;
         }
         else if (val == 1) // скорость 5
@@ -71,6 +76,11 @@ public class SpawnBombs : MonoBehaviour
         {
             bomb.GetComponent<FallDown>().fallspeed = 10;
             coin.GetComponent<CoinDown>().speed = 10;
+        }
+        else if (val == 4) // выборочная скорость
+        {
+            bomb.GetComponent<FallDown>().fallspeed = myspeed;
+            coin.GetComponent<CoinDown>().speed = myspeed;
         }
 
     }
@@ -94,8 +104,8 @@ public class SpawnBombs : MonoBehaviour
 
         if (val == 0) // аркада
         {
-            bomb.GetComponent<FallDown>().fallspeed = 2;
-            coin.GetComponent<CoinDown>().speed = 2;
+            bomb.GetComponent<FallDown>().fallspeed = first_arcade_speed;
+            coin.GetComponent<CoinDown>().speed = first_arcade_speed;
             time = 1.1f;
 
             StartCoroutine(SpawnArcada());
@@ -120,6 +130,28 @@ public class SpawnBombs : MonoBehaviour
         {
             freetime = 0.35f;
             chanceDrop = 8;
+
+            StartCoroutine(SpawnStaticSpeed());
+            LevelPanel.SetActive(false);
+        }
+        else if (val == 4) // выборочная скорость
+        {  
+            bomb.GetComponent<FallDown>().fallspeed = myspeed;
+            coin.GetComponent<CoinDown>().speed = myspeed;
+
+            if (myspeed < 4)
+                freetime = 0.8f;  
+            else if (myspeed >= 4 && myspeed < 8)
+                freetime = 0.6f;
+            else if (myspeed >= 8 && myspeed <= 10)        
+                freetime = 0.35f;
+            else if (myspeed > 10 && myspeed <= 13)
+                freetime = 0.28f;
+            else if (myspeed > 13)
+                freetime = 0.22f;
+
+            
+            chanceDrop = 7;
 
             StartCoroutine(SpawnStaticSpeed());
             LevelPanel.SetActive(false);
@@ -212,7 +244,7 @@ public class SpawnBombs : MonoBehaviour
 
             yield return new WaitForSeconds(freetime);
 
-            if (val == 3)
+            if (val == 3 || val == 4)
             {
                 if (Random.Range(0, 100) < 8)
                 {

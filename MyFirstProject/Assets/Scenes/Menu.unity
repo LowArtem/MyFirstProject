@@ -205,6 +205,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Speed 10
       m_Image: {fileID: 0}
+    - m_Text: Youre speed
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -585,6 +587,7 @@ GameObject:
   - component: {fileID: 500217815}
   - component: {fileID: 500217816}
   - component: {fileID: 500217817}
+  - component: {fileID: 500217818}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -688,6 +691,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d23c20bcd0f5d43968f9ed9c60ca6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &500217818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 500217810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fb42975911de9488a7220efe7402ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drop: {fileID: 175877964}
 --- !u!1 &533811507
 GameObject:
   m_ObjectHideFlags: 0

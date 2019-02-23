@@ -1,10 +1,11 @@
 Android
 PlayerPath?
-C:/Users/user/Unity projects/APK/Kind Bird/Kind Bird(8.09.18).apk
+C:/Users/user/Unity projects/APK/Kind Bird/Kind Bird(23.02.19).apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
 Assets/Scenes/Shop.unity
+Assets/Scenes/Speed control.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShopStart
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -130,7 +131,7 @@ dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.CoinDown
 4a5331c8ae47449eb898a3320a590848 Assembly-CSharp.dll:.AndroidKey
 74efc061e1380fbfbfcad97ef61c62f6 Assembly-CSharp.dll:.Restart
 0c77bd5e88eea320b874b206d6e96645 Assembly-CSharp.dll:.AndroidKeyShop
-1db03605ccb6a6f978e12b159f79a441 Assembly-CSharp.dll:.Manager
+f8359f51cf5324d1658e863e0ce87d02 Assembly-CSharp.dll:.Manager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -178,6 +179,9 @@ fe6f25dd24455d2676112b86cecd4a53 Assembly-CSharp.dll:.RedSkin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpeedChange
 069e8dd03fa75a7eed80e4337059e1e9 Assembly-CSharp.dll:.SpawnBombs
 2fd5034cfb5c5b5cbd249051889a7726 Assembly-CSharp.dll:.Player
+8ae142de86ddb8532d6c980dda514b5f Assembly-CSharp.dll:.SpawnCoins
 5ce4c9a1d2947fdaae3fc0f3b1ec7327 Assembly-CSharp.dll:.Retry
 c86180317d032b5e3c09549c41842a3d Assembly-CSharp.dll:.MovePlayer
-8ae142de86ddb8532d6c980dda514b5f Assembly-CSharp.dll:.SpawnCoins
+f7bd955884904717a96ef3bac816f4f3 Assembly-CSharp.dll:.GameStartUsersSpeed
+250188084ea9a0a10ffdf4956919ce97 Assembly-CSharp.dll:.DropDownControll
+f7bd955884904717a96ef3bac816f4f3 Assembly-CSharp.dll:.MySpeedControll

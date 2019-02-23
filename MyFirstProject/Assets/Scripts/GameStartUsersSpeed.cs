@@ -1,23 +1,30 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.UI;
+using System;
 
-public class GameStart : MonoBehaviour {
+public class GameStartUsersSpeed : MonoBehaviour
+{
 
-    
-	public void ShowGame()
-	{
+    public GameObject TextField;
+
+    public void StartGame()
+    {
         Player.lose = false;
         Pause.pause = false;
         Exit.exit = false;
         Time.timeScale = 1;
         SpawnBombs.stop = true;
 
-        if(Manager.num == 4)
-            SceneManager.LoadScene("Speed control");
-        else
-            SceneManager.LoadScene("Game");
 
+
+        Manager.speed_val = Convert.ToInt32(TextField.GetComponent<Text>().text);
+
+
+        
+
+        SceneManager.LoadScene("Game");
 
         if (!Directory.Exists(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird"))
         {
@@ -27,11 +34,25 @@ public class GameStart : MonoBehaviour {
         if (!File.Exists(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/Data.txt"))
         {
             File.WriteAllText(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/Data.txt", 0.ToString());
-        }        
+        }
 
         if (!File.Exists(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/DropDown.txt"))
         {
             File.WriteAllText(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/DropDown.txt", 0.ToString());
-        }  
+        }
+
+        if (!File.Exists(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/MySpeed.txt"))
+        {
+            File.WriteAllText(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/MySpeed.txt", 10.ToString());
+        }
+
+
+
+
+
+        if (File.Exists(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/MySpeed.txt"))
+        {
+            File.WriteAllText(@"/storage/emulated/0/Android/data/com.FirstGame.KindBird/MySpeed.txt", TextField.GetComponent<Text>().text);
+        }
     }
 }

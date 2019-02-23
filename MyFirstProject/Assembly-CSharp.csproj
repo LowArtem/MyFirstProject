@@ -58,10 +58,12 @@
      <Compile Include="Assets\Scripts\CoinDown.cs" />
      <Compile Include="Assets\Scripts\Continue.cs" />
      <Compile Include="Assets\Scripts\DestroyParticle.cs" />
+     <Compile Include="Assets\Scripts\DropDownControll.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\ExitShop.cs" />
      <Compile Include="Assets\Scripts\FallDown.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
+     <Compile Include="Assets\Scripts\GameStartUsersSpeed.cs" />
      <Compile Include="Assets\Scripts\GraySkin.cs" />
      <Compile Include="Assets\Scripts\GreenSkin.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
@@ -69,6 +71,7 @@
      <Compile Include="Assets\Scripts\MoneyInShop.cs" />
      <Compile Include="Assets\Scripts\MovePlayer.cs" />
      <Compile Include="Assets\Scripts\MulticolouredSkin.cs" />
+     <Compile Include="Assets\Scripts\MySpeedControll.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Play.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

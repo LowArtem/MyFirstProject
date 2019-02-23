@@ -5,8 +5,10 @@ public class Manager : MonoBehaviour {
     public GameObject drop;
 
     public int val;
+    public int speed;
 
     public static int num;
+    public static int speed_val;
 
     void Awake()
     {        
@@ -16,5 +18,6 @@ public class Manager : MonoBehaviour {
     void Update()
     {
         val = num;
+        speed = speed_val;
     }   
 }

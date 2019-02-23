@@ -27,7 +27,7 @@ public class Continue : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (isPress != 2)
+        if (isPress != 3)
         {
             if (System.Convert.ToInt32(Tablo.GetComponent<Text>().text) >= price)
             {
@@ -87,9 +87,9 @@ public class Continue : MonoBehaviour
                 player.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
                 isPress = isPress + 1;
-                price = price * 2;
+                price = price + 20;
 
-                if (isPress == 2)
+                if (isPress == 3)
                 {
                     isOff = true;
                 }

@@ -1370,7 +1370,7 @@ Prefab:
     - target: {fileID: 114558718384574070, guid: 563103b979ddb4849b947d05175e816f,
         type: 2}
       propertyPath: price
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 563103b979ddb4849b947d05175e816f, type: 2}
@@ -2272,7 +2272,6 @@ MonoBehaviour:
   LevelPanel: {fileID: 40534331}
   Tablo: {fileID: 1491213756}
   TimeTablo: {fileID: 119055313}
-  chanceDrop: 20
   time: 1.2
   freetime: 0.7
 --- !u!114 &1818247568
@@ -2314,9 +2313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 1272722668000446, guid: a9f09606b67e5214eb6e14c02f086863, type: 2}
-  chanceDrop: 18
-  time: 1
-  freetime: 0.5
 --- !u!1 &1825704986 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1936934154336346, guid: 7fcc7d3eb63e7dd4a8b01c2fcc2d933b,
