@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/user/Unity projects/APK/Kind Bird/Kind Bird(23.02.19).apk
+C:/Users/user/Unity projects/APK/Kind Bird/Kind Bird(23.02.19_update1).apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -134,6 +134,7 @@ dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.CoinDown
 f8359f51cf5324d1658e863e0ce87d02 Assembly-CSharp.dll:.Manager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+250188084ea9a0a10ffdf4956919ce97 Assembly-CSharp.dll:.DropDownControll
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -172,6 +173,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 0c77bd5e88eea320b874b206d6e96645 Assembly-CSharp.dll:.ExitShop
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 4a5331c8ae47449eb898a3320a590848 Assembly-CSharp.dll:.Pause
+f7bd955884904717a96ef3bac816f4f3 Assembly-CSharp.dll:.GameStartUsersSpeed
 b8101d2e2805bcde2ae3edce5c7ba2d5 Assembly-CSharp.dll:.SelectMark
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Quit
 fe6f25dd24455d2676112b86cecd4a53 Assembly-CSharp.dll:.RedSkin
@@ -182,6 +184,6 @@ fe6f25dd24455d2676112b86cecd4a53 Assembly-CSharp.dll:.RedSkin
 8ae142de86ddb8532d6c980dda514b5f Assembly-CSharp.dll:.SpawnCoins
 5ce4c9a1d2947fdaae3fc0f3b1ec7327 Assembly-CSharp.dll:.Retry
 c86180317d032b5e3c09549c41842a3d Assembly-CSharp.dll:.MovePlayer
-f7bd955884904717a96ef3bac816f4f3 Assembly-CSharp.dll:.GameStartUsersSpeed
-250188084ea9a0a10ffdf4956919ce97 Assembly-CSharp.dll:.DropDownControll
 f7bd955884904717a96ef3bac816f4f3 Assembly-CSharp.dll:.MySpeedControll
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AndroidKeySpeedControl
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.QuitSpeedControl

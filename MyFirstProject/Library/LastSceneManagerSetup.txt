@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Menu.unity
+- path: Assets/Scenes/Speed control.unity
   isLoaded: 1
   isActive: 1

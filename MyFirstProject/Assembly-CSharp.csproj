@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\AndroidKey.cs" />
      <Compile Include="Assets\Scripts\AndroidKeyMenu.cs" />
      <Compile Include="Assets\Scripts\AndroidKeyShop.cs" />
+     <Compile Include="Assets\Scripts\AndroidKeySpeedControl.cs" />
      <Compile Include="Assets\Scripts\BlueSkin.cs" />
      <Compile Include="Assets\Scripts\CoinDown.cs" />
      <Compile Include="Assets\Scripts\Continue.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\Scripts\Play.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
+     <Compile Include="Assets\Scripts\QuitSpeedControl.cs" />
      <Compile Include="Assets\Scripts\RedSkin.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\Retry.cs" />
