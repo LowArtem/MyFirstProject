@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Speed control.unity
     guid: 94f6f441693782b40b1fbf1db8cbdfda
+  - enabled: 1
+    path: Assets/Scenes/Shop2.unity
+    guid: 2fdb61dcef87b8a429e9d9aadef75383
